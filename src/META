@@ -1,0 +1,7 @@
+description = "additional functions to the stdlib"
+version = "v2026-05-04"
+exists_if = "utLib.cma"
+archive(byte) = "utLib.cma"
+archive(native) = "utLib.cmxa"
+archive(byte,plugin) = "utLib.cma"
+archive(native,plugin) = "utLib.cmxs"

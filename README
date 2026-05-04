@@ -1,0 +1,6 @@
+This OCaml set of functions provides some additional functions to the ocaml's
+stdlib.
+
+To the extent permitted by law, this library can be released with a Zlib
+license, see the file "LICENSE" for details.
+

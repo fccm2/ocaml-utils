@@ -1,0 +1,142 @@
+args.cmo : \
+    pervasive.cmi \
+    args.cmi
+args.cmx : \
+    pervasive.cmx \
+    args.cmi
+args.cmi :
+arrays.cmo : \
+    arrays.cmi
+arrays.cmx : \
+    arrays.cmi
+arrays.cmi :
+chars.cmo : \
+    chars.cmi
+chars.cmx : \
+    chars.cmi
+chars.cmi :
+filenames.cmo : \
+    filenames.cmi
+filenames.cmx : \
+    filenames.cmi
+filenames.cmi :
+floats.cmo : \
+    floats.cmi
+floats.cmx : \
+    floats.cmi
+floats.cmi :
+imArrays.cmo : \
+    imArrays.cmi
+imArrays.cmx : \
+    imArrays.cmi
+imArrays.cmi :
+imStrings.cmo : \
+    imStrings.cmi
+imStrings.cmx : \
+    imStrings.cmi
+imStrings.cmi :
+inputs.cmo : \
+    strings.cmi \
+    inputs.cmi
+inputs.cmx : \
+    strings.cmx \
+    inputs.cmi
+inputs.cmi :
+ints.cmo : \
+    ints.cmi
+ints.cmx : \
+    ints.cmi
+ints.cmi :
+ints32.cmo : \
+    ints32.cmi
+ints32.cmx : \
+    ints32.cmi
+ints32.cmi :
+ints64.cmo : \
+    ints64.cmi
+ints64.cmx : \
+    ints64.cmi
+ints64.cmi :
+lists.cmo : \
+    lists.cmi
+lists.cmx : \
+    lists.cmi
+lists.cmi :
+loops.cmo : \
+    loops.cmi
+loops.cmx : \
+    loops.cmi
+loops.cmi :
+loopsLbl.cmo : \
+    loopsLbl.cmi
+loopsLbl.cmx : \
+    loopsLbl.cmi
+loopsLbl.cmi :
+options.cmo : \
+    options.cmi
+options.cmx : \
+    options.cmi
+options.cmi :
+outputs.cmo : \
+    outputs.cmi
+outputs.cmx : \
+    outputs.cmi
+outputs.cmi :
+pervasive.cmo : \
+    pervasive.cmi
+pervasive.cmx : \
+    pervasive.cmi
+pervasive.cmi :
+randoms.cmo : \
+    strings.cmi \
+    randoms.cmi
+randoms.cmx : \
+    strings.cmx \
+    randoms.cmi
+randoms.cmi :
+strings.cmo : \
+    strings.cmi
+strings.cmx : \
+    strings.cmi
+strings.cmi :
+utLib.cmo : \
+    strings.cmi \
+    randoms.cmi \
+    pervasive.cmi \
+    outputs.cmi \
+    options.cmi \
+    loopsLbl.cmi \
+    loops.cmi \
+    lists.cmi \
+    ints64.cmi \
+    ints32.cmi \
+    ints.cmi \
+    inputs.cmi \
+    imStrings.cmi \
+    imArrays.cmi \
+    floats.cmi \
+    chars.cmi \
+    arrays.cmi \
+    args.cmi \
+    utLib.cmi
+utLib.cmx : \
+    strings.cmx \
+    randoms.cmx \
+    pervasive.cmx \
+    outputs.cmx \
+    options.cmx \
+    loopsLbl.cmx \
+    loops.cmx \
+    lists.cmx \
+    ints64.cmx \
+    ints32.cmx \
+    ints.cmx \
+    inputs.cmx \
+    imStrings.cmx \
+    imArrays.cmx \
+    floats.cmx \
+    chars.cmx \
+    arrays.cmx \
+    args.cmx \
+    utLib.cmi
+utLib.cmi :

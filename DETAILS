@@ -1,0 +1,26 @@
+An other author made another ocaml-util(s) lib,  
+we are not aware what is the exact name of this  
+lib in order to avoid "name-clash" between this  
+lib, and this one.
+
+Possible re-names, in order to avoid name-clash:  
+- "ocaml-utils"
+- "ocaml-util"
+
+- "ocaml-utils-lib"
+- "ocaml-util-lib"
+
+- "ocaml-lib-utils"
+- "ocaml-lib-util"
+
+- "ocaml-libutils"
+- "ocaml-libutil"
+
+- "ocaml-utilslib"
+- "ocaml-utillib"
+
+- "ocaml-utlib"
+
+In case you redistribute this set of modules,  
+please re-name it accordingly.
+
