@@ -1,5 +1,5 @@
 RMDIR = rmdir
-CMOS = ints.cmo chars.cmo floats.cmo strings.cmo ints32.cmo ints64.cmo lists.cmo arrays.cmo imArrays.cmo imStrings.cmo inputs.cmo outputs.cmo loops.cmo loopsLbl.cmo options.cmo pervasive.cmo args.cmo randoms.cmo filenames.cmo chars2.cmo
+CMOS = ints.cmo chars.cmo floats.cmo str_replace.cmo su8_upper.cmo strings.cmo ints32.cmo ints64.cmo lists.cmo arrays.cmo imArrays.cmo imStrings.cmo inputs.cmo outputs.cmo loops.cmo loopsLbl.cmo options.cmo pervasive.cmo args.cmo randoms.cmo filenames.cmo chars2.cmo
 
 all: mod opt
 mod: utLib.cma
@@ -9,6 +9,8 @@ utLib.cma: \
  ints.cmo \
  chars.cmo \
  floats.cmo \
+ su8_upper.cmo \
+ str_replace.cmo \
  strings.cmo \
  ints32.cmo \
  ints64.cmo \
@@ -34,6 +36,8 @@ utLib.cmxa: \
  ints.cmx \
  chars.cmx \
  floats.cmx \
+ su8_upper.cmx \
+ str_replace.cmx \
  strings.cmx \
  ints32.cmx \
  ints64.cmx \
@@ -199,6 +203,14 @@ clean:
 	$(RM) utLib.cmi
 	$(RM) utLib.o
 	$(RM) utLib.a
+	$(RM) su8_upper.o
+	$(RM) su8_upper.cmo
+	$(RM) su8_upper.cmx
+	$(RM) su8_upper.cmi
+	$(RM) str_replace.o
+	$(RM) str_replace.cmx
+	$(RM) str_replace.cmo
+	$(RM) str_replace.cmi
 	$(RM) _man/*.html
 	$(RM) _man/*.css
 	test -d _man/ && $(RMDIR) _man/ || :
@@ -307,11 +319,25 @@ randoms.cmx : \
     strings.cmx \
     randoms.cmi
 randoms.cmi :
+str_replace.cmo : \
+    str_replace.cmi
+str_replace.cmx : \
+    str_replace.cmi
+str_replace.cmi :
 strings.cmo : \
+    su8_upper.cmi \
+    str_replace.cmi \
     strings.cmi
 strings.cmx : \
+    su8_upper.cmx \
+    str_replace.cmx \
     strings.cmi
 strings.cmi :
+su8_upper.cmo : \
+    su8_upper.cmi
+su8_upper.cmx : \
+    su8_upper.cmi
+su8_upper.cmi :
 utLib.cmo : \
     strings.cmi \
     randoms.cmi \

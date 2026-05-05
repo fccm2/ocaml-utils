@@ -223,3 +223,5 @@ let string_index s pat =
 let string_rindex s pat =
   string_rindex_from s (String.length s - 1) pat
 
+include Su8_upper
+include Str_replace

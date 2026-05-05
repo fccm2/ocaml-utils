@@ -35,3 +35,6 @@ val string_rindex_from : string -> int -> string -> int option
 val string_index : string -> string -> int option
 val string_rindex : string -> string -> int option
 
+val uppercase_utf8 : string -> string
+val str_replace : string -> (string * string) list -> string
+
