@@ -1,5 +1,5 @@
 RMDIR = rmdir
-CMOS = ints.cmo chars.cmo floats.cmo strings.cmo ints32.cmo ints64.cmo lists.cmo arrays.cmo imArrays.cmo imStrings.cmo inputs.cmo outputs.cmo loops.cmo loopsLbl.cmo options.cmo pervasive.cmo args.cmo randoms.cmo filenames.cmo
+CMOS = ints.cmo chars.cmo floats.cmo strings.cmo ints32.cmo ints64.cmo lists.cmo arrays.cmo imArrays.cmo imStrings.cmo inputs.cmo outputs.cmo loops.cmo loopsLbl.cmo options.cmo pervasive.cmo args.cmo randoms.cmo filenames.cmo chars2.cmo
 
 all: mod opt
 mod: utLib.cma
@@ -25,6 +25,7 @@ utLib.cma: \
  args.cmo \
  randoms.cmo \
  filenames.cmo \
+ chars2.cmo \
  utLib.cmo
 	ocamlc -a -o utLib.cma $^
 
@@ -48,6 +49,7 @@ utLib.cmxa: \
  pervasive.cmx \
  args.cmx \
  randoms.cmx \
+ chars2.cmx \
  utLib.cmx
 	ocamlopt -a -o utLib.cmxa $^
 
@@ -84,6 +86,7 @@ _man: \
  args.cmi \
  randoms.cmi \
  filenames.cmi \
+ chars2.cmi \
  utLib.cmi
 	mkdir -p _man
 	ocamldoc -d _man -html \
@@ -106,6 +109,7 @@ _man: \
 	 args.mli \
 	 randoms.mli \
 	 filenames.mli \
+	 chars2.mli \
 	 utLib.mli
 clean:
 	$(RM) utLib.cma
@@ -128,6 +132,7 @@ clean:
 	$(RM) pervasive.cmo
 	$(RM) randoms.cmo
 	$(RM) filenames.cmo
+	$(RM) chars2.cmo
 	$(RM) utLib.cmo
 	$(RM) utLib.cmxa
 	$(RM) ints.cmx
@@ -149,6 +154,7 @@ clean:
 	$(RM) pervasive.cmx
 	$(RM) randoms.cmx
 	$(RM) filenames.cmx
+	$(RM) chars2.cmx
 	$(RM) utLib.cmx
 	$(RM) ints.o
 	$(RM) chars.o
@@ -169,6 +175,7 @@ clean:
 	$(RM) pervasive.o
 	$(RM) randoms.o
 	$(RM) filenames.o
+	$(RM) chars2.o
 	$(RM) ints.cmi
 	$(RM) chars.cmi
 	$(RM) floats.cmi
@@ -188,6 +195,7 @@ clean:
 	$(RM) pervasive.cmi
 	$(RM) randoms.cmi
 	$(RM) filenames.cmi
+	$(RM) chars2.cmi
 	$(RM) utLib.cmi
 	$(RM) utLib.o
 	$(RM) utLib.a
@@ -215,6 +223,11 @@ chars.cmo : \
 chars.cmx : \
     chars.cmi
 chars.cmi :
+chars2.cmo : \
+    chars2.cmi
+chars2.cmx : \
+    chars2.cmi
+chars2.cmi :
 filenames.cmo : \
     filenames.cmi
 filenames.cmx : \
@@ -315,6 +328,7 @@ utLib.cmo : \
     imStrings.cmi \
     imArrays.cmi \
     floats.cmi \
+    chars2.cmi \
     chars.cmi \
     arrays.cmi \
     args.cmi \
@@ -335,6 +349,7 @@ utLib.cmx : \
     imStrings.cmx \
     imArrays.cmx \
     floats.cmx \
+    chars2.cmx \
     chars.cmx \
     arrays.cmx \
     args.cmx \

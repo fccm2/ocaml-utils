@@ -884,6 +884,13 @@ module Options : sig
       or if [opt_val] is [Some v], then [v] is returned. *)
 end
 
+module Chars2 : sig
+  type t
+  val of_char : char -> t
+  val of_u2 : string -> t
+  val to_u2 : t -> string
+end
+
 module Labels : sig
   module Loops : sig
     val fold_left : f:('a -> int -> 'a) -> init:'a -> int -> 'a

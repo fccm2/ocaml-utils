@@ -63,6 +63,10 @@ module Loops = struct
   include Loops
 end
 
+module Chars2 = struct
+  include Chars2
+end
+
 module Labels = struct
   module Loops = struct
     include LoopsLbl
