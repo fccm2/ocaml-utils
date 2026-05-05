@@ -1,5 +1,5 @@
 description = "additional functions to the stdlib"
-version = "v2026-05-04"
+version = "v2026-05-05"
 exists_if = "utLib.cma"
 archive(byte) = "utLib.cma"
 archive(native) = "utLib.cmxa"
