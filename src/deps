@@ -15,6 +15,11 @@ chars.cmo : \
 chars.cmx : \
     chars.cmi
 chars.cmi :
+chars2.cmo : \
+    chars2.cmi
+chars2.cmx : \
+    chars2.cmi
+chars2.cmi :
 filenames.cmo : \
     filenames.cmi
 filenames.cmx : \
@@ -94,11 +99,25 @@ randoms.cmx : \
     strings.cmx \
     randoms.cmi
 randoms.cmi :
+str_replace.cmo : \
+    str_replace.cmi
+str_replace.cmx : \
+    str_replace.cmi
+str_replace.cmi :
 strings.cmo : \
+    su8_upper.cmi \
+    str_replace.cmi \
     strings.cmi
 strings.cmx : \
+    su8_upper.cmx \
+    str_replace.cmx \
     strings.cmi
 strings.cmi :
+su8_upper.cmo : \
+    su8_upper.cmi
+su8_upper.cmx : \
+    su8_upper.cmi
+su8_upper.cmi :
 utLib.cmo : \
     strings.cmi \
     randoms.cmi \
@@ -115,6 +134,7 @@ utLib.cmo : \
     imStrings.cmi \
     imArrays.cmi \
     floats.cmi \
+    chars2.cmi \
     chars.cmi \
     arrays.cmi \
     args.cmi \
@@ -135,6 +155,7 @@ utLib.cmx : \
     imStrings.cmx \
     imArrays.cmx \
     floats.cmx \
+    chars2.cmx \
     chars.cmx \
     arrays.cmx \
     args.cmx \
